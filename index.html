@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="github-light">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>CP Daily Log</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+  <header class="top noprint">
+    <h1>CP Daily Log</h1>
+    <div class="actions">
+      <select id="theme" aria-label="Theme"></select>
+      <button id="printBtn" class="btn primary">Print report</button>
+      <button id="clearBtn" class="btn ghost">New day</button>
+    </div>
+  </header>
+
+  <main>
+    <section class="card profile noprint">
+      <input id="pName" placeholder="Your name">
+      <input id="pCf" placeholder="Codeforces ID">
+      <input id="pLc" placeholder="LeetCode ID">
+    </section>
+
+    <section class="print-head">
+      <div class="ph-top">
+        <div>
+          <div class="ph-kicker">Competitive Programming · Daily Report</div>
+          <h2 id="rName"></h2>
+        </div>
+        <div class="ph-date" id="rDate"></div>
+      </div>
+      <div class="ph-links" id="rLinks"></div>
+    </section>
+
+    <section class="stats" id="stats"></section>
+    <section class="card">
+      <h3>Problems per hour &amp; difficulty over the day</h3>
+      <div id="chart"></div>
+    </section>
+
+    <section class="platforms">
+      <div id="plat-cf" class="card plat"></div>
+      <div id="plat-lc" class="card plat"></div>
+    </section>
+
+    <section id="entries"></section>
+    <section id="active" class="noprint"></section>
+    <footer class="print-foot">Generated with CP Daily Log</footer>
+  </main>
+
+  <div id="modal" class="modal hidden noprint" role="dialog" aria-modal="true"></div>
+
+  <script src="js/store.js"></script>
+  <script src="js/theme.js"></script>
+  <script src="js/highlight.js"></script>
+  <script src="js/markdown.js"></script>
+  <script src="js/charts.js"></script>
+  <script src="js/timer.js"></script>
+  <script src="js/entries.js"></script>
+  <script src="js/report.js"></script>
+  <script src="js/platforms.js"></script>
+  <script src="js/main.js"></script>
+</body>
+
+</html>

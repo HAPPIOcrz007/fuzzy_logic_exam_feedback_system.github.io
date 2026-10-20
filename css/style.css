@@ -1,0 +1,8 @@
+/* Handler: all stylesheets are connected here */
+@import url("themes.css");
+@import url("base.css");
+@import url("layout.css");
+@import url("components.css");
+@import url("print.css");
+@import url("syntax.css");
+@import url("platforms.css");

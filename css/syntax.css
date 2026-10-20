@@ -11,7 +11,7 @@
 .md pre.code code {
     background: none;
     padding: 0;
-    font: 700 12.5px/1.6 ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+    font: 700 12.5px/1.6 var(--font-mono), ui-monospace, Menlo, Consolas, monospace;
     white-space: pre
 }
 
@@ -86,7 +86,7 @@ pre[data-lang="js"] .tk-b {
 
 /* this, console */
 #mNotes {
-    font: 12.5px/1.5 ui-monospace, SFMono-Regular, Menlo, Consolas, monospace
+    font: 12.5px/1.5 var(--font-mono), ui-monospace, Menlo, Consolas, monospace
 }
 
 .toolbar {

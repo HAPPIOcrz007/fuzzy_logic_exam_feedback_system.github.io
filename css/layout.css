@@ -75,3 +75,13 @@ main {
     color: var(--muted);
     margin: .4rem 0
 }
+
+.top h1 a {
+    color: inherit;
+    text-decoration: none
+}
+
+.top h1 a:hover {
+    color: var(--accent);
+    text-decoration: none
+}

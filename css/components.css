@@ -49,7 +49,7 @@
 }
 
 .timer {
-    font: 600 2.4rem ui-monospace, Menlo, monospace;
+    font: 600 2.4rem var(--font-mono), ui-monospace, Menlo, monospace;
     margin: .4rem 0
 }
 
@@ -245,4 +245,8 @@ svg text {
 
 .plink {
     font-weight: 600
+}
+
+.card {
+    box-shadow: var(--shadow-sm)
 }

@@ -1,5 +1,56 @@
+/* Default themes (Light / Dark) use the tokens from 02-variables.css */
+:root[data-theme="light"],
+:root[data-theme="dark"] {
+    --line: var(--border);
+    --muted: var(--text-muted);
+    --accent: var(--green);
+    --btn: var(--green);
+    --btn-on: #fff;
+    --code-bg: var(--bg2)
+}
+
+:root[data-theme="light"] {
+    --easy: #1f9d55;
+    --medium: #d4a017;
+    --hard: #d92d20;
+    --on: #fff;
+    --on-m: #1a1a1a;
+    --tk-k: #bc3b03;
+    --tk-s: #0b7a4b;
+    --tk-c: #777777;
+    --tk-n: #1d4ed8;
+    --tk-f: #7c3aed;
+    --tk-t: #b45309;
+    --tk-p: #be185d;
+    --tk-l: #1d4ed8;
+    --tk-b: #0e7490;
+    --tk-t-style: normal
+}
+
+:root[data-theme="dark"] {
+    --easy: #3fb950;
+    --medium: #e3b341;
+    --hard: #f85149;
+    --on: #0a0a0a;
+    --tk-k: #ff8a50;
+    --tk-s: #a8d98b;
+    --tk-c: #7d7d7d;
+    --tk-n: #7cb7ff;
+    --tk-f: #c4a1ff;
+    --tk-t: #ffc66d;
+    --tk-p: #ff7ab6;
+    --tk-l: #7cb7ff;
+    --tk-b: #5ed3e0;
+    --tk-t-style: normal
+}
+
+/* The extra themes keep system fonts */
+:root[data-theme]:not([data-theme="light"]):not([data-theme="dark"]) {
+    --font-body: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+    --font-mono: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace
+}
+
 /* Theme palettes. theme.js sets data-theme on <html> (Auto resolves to GitHub Light/Dark). */
-:root,
 :root[data-theme="github-light"] {
     --bg: #fff;
     --card: #f6f8fa;
